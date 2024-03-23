@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 30px;
+  scroll-behavior: smooth;
+}
+.brand {
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  text-align: center;
+}
+.brand-header {
+  grid-area: header;
+}
+.nav-links {
+  grid-area: nav;
+}
+.story1 {
+  grid-area: story1;
+}
+.story2 {
+  grid-area: story2;
+}
+.story3 {
+  grid-area: story3;
+}
+.story4 {
+  grid-area: story4;
+}
+.story5 {
+  grid-area: story5;
+}
+.page {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "story1 story2 story3"
+    "story4 story5 story5";
+}
+.article-title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+}
+.article-img {
+  display: block;
+  margin: 0 auto;
+  max-height: 250px;
+}
+.story {
+  padding: 10px;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+}
+.story3 {
+  border-right: 3px solid black;
+}
+.story5 {
+  border-right: 3px solid black;
+}
+.nav-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  border: 3px solid black;
+  margin: 0;
+  padding: 30px;
+}
+.page-link {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Arial";
+  color: #666;
+}
+.page-link:hover {
+  text-decoration: underline;
+  color: blue;
+}
